@@ -13,10 +13,15 @@ li {
     list-style-type: none;
     text-decoration: none;
     color: #000;
+    font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .mk-is-selected {
     color: #FF764D;
+}
+
+.mk-main-container.mk-main-container-home {
+    position: relative;
 }
 
 /* HEADER */ 
@@ -24,44 +29,42 @@ li {
     padding-top: 20px;
 }
 
-/* Primary Navigation */
+/**** Navigation ****/
 .mk-wrapper .mk-main-container .mk-header .mk-main-nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
+/** Primary Navigation **/
 .mk-wrapper .mk-main-container .mk-header .mk-main-nav.mk-main-nav-primary {
     border-bottom: 2px solid #F3F3F3;
 }
 
-.mk-wrapper .mk-main-container .mk-header .mk-main-nav a.mk-logo-img {
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav.mk-main-nav-primary a.mk-logo-img {
     display: inline-block;
     margin: 0 32px 20px 20px;
     width: 60px;
     height: 28px;
     background-image: url('img/apple-touch-icon.fb3597184cb0.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -8px;
-    background-position-y: -16px;
+    background-size: 138%;
+    background-position-x: -11px;
+    background-position-y: -27px;
+    z-index: 30;
 }
 
-.mk-wrapper .mk-main-container .mk-header .mk-main-nav a img {
-    display: block;
-    width: 3.75em;
-    /* height: 1.75em; */
-}
-
-.mk-wrapper .mk-main-container .mk-header .mk-main-nav button {
-    font-size: 16px;
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav.mk-main-nav-primary button {
+    font-size: 20px;
     font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
     border: none;
     background-color: #fff;
     margin-bottom: 15px;
+    font-weight: 700;
+    z-index: 30;
 }
 
-.mk-wrapper .mk-main-container .mk-header .mk-main-nav button::after {
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav.mk-main-nav-primary button::after {
     content: '';
     -webkit-transform: scaleX(0.8);
     -moz-transform: scaleX(0.8);
@@ -79,7 +82,23 @@ li {
     border-top-color: #000;
 }
 
-/* Secondary Navigation */
+/* dropdown menu on mobile */
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav.mk-main-nav-primary .mk-dropdown_menu {
+    background-color: blue;
+    position: absolute;
+    padding: 70px 15px 0 15px;
+    z-index: 20;
+    width: 100%;
+    top: 0;
+}
+
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav.mk-main-nav-primary .mk-dropdown_menu ul li a{
+    color: #fff;
+    font-weight: 700;
+    font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+/** Secondary Navigation **/
 .mk-wrapper .mk-main-container .mk-header .mk-main-nav-secondary {
 
 }
@@ -105,5 +124,6 @@ li {
 }
 
 .mk-wrapper .mk-main-container .mk-header .mk-main-nav-secondary ul li a {
-
+    font-size: 14px;
+    font-weight: 700;
 }
