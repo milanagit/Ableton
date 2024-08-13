@@ -1,28 +1,28 @@
-body header nav {
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-body header nav a {
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav a {
     display: inline-block;
 }
 
-body header nav a img {
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav a img {
     display: block;
     width: 3.75em;
     /* height: 1.75em; */
 }
 
-body header nav button {
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav button {
     font-size: 16px;
     font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
     border: none;
     background-color: #fff;
 }
 
-body header nav button::after {
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav button::after {
     content: '';
     -webkit-transform: scaleX(0.8);
     -moz-transform: scaleX(0.8);
