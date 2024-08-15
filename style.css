@@ -1,4 +1,9 @@
 /* General styles */
+@font-face {
+    font-family: futura-pt;
+    src: url(fonts/futura-pt-book.2dadbb3c03c1.woff2);
+}
+
 body,
 div,
 header,
@@ -7,7 +12,10 @@ a,
 img,
 button,
 ul,
-li {
+li,
+p,
+h1,
+h2 {
     padding: 0px;
     margin: 0px;
     list-style-type: none;
@@ -24,7 +32,9 @@ li {
     position: relative;
 }
 
-/* HEADER */ 
+/*********************************************/
+/*                 HEADER                    */
+/*********************************************/
 .mk-wrapper .mk-main-container .mk-header {
     padding-top: 20px;
 }
@@ -46,11 +56,6 @@ li {
     margin: 0 32px 20px 20px;
     width: 60px;
     height: 28px;
-    /* background-image: url('img/apple-touch-icon.fb3597184cb0.png');
-    background-repeat: no-repeat;
-    background-size: 138%;
-    background-position-x: -11px;
-    background-position-y: -27px; */
     z-index: 30;
 }
 
@@ -118,6 +123,22 @@ li {
     display: block;
 }
 
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav.mk-main-nav-primary .mk-dropdown_menu ul {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    width: 100%;
+    padding-right: 1.25rem;
+    font-weight: bold;
+}
+
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav.mk-main-nav-primary .mk-dropdown_menu ul li {
+    margin-bottom: 1em;
+}
+
+.mk-wrapper .mk-main-container .mk-header .mk-main-nav.mk-main-nav-primary .mk-dropdown_menu ul li:last-child {
+    font-size: .875rem;
+}
+
 .mk-wrapper .mk-main-container .mk-header .mk-main-nav.mk-main-nav-primary .mk-dropdown_menu ul li a{
     color: #fff;
     font-weight: 700;
@@ -152,4 +173,51 @@ li {
 .mk-wrapper .mk-main-container .mk-header .mk-main-nav-secondary ul li a {
     font-size: 14px;
     font-weight: 700;
+}
+
+/*********************************************/
+/*                 MAIN                    */
+/*********************************************/
+
+/** Head image **/
+main .mk-about-page .mk-about-head_img {
+    margin-left: 8.33333vw;
+    margin-right: 8.33333vw;
+    margin-bottom: 8.33333vw;
+    position: relative;
+    min-height: 100vh;
+    min-height: calc(100vh - 120px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(img/header.avif);
+}
+
+main .mk-about-page .mk-about-head_img svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 215px;
+    height: 52px;
+    margin-left: -107px;
+    margin-top: -26px;
+}
+
+/** About - first txt **/
+main .mk-about-page .mk-about-first_txt {
+    margin: 8.33333vw;
+    margin-top: 0;
+}
+
+main .mk-about-page .mk-about-first_txt h1 {
+    margin-top: 0;
+    margin-bottom: .7em;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: bold;
+    text-indent: 30px;
+}
+
+main .mk-about-page .mk-about-first_txt h1 a {
+    color: blue;
 }
