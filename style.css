@@ -221,3 +221,47 @@ main .mk-about-page .mk-about-first_txt h1 {
 main .mk-about-page .mk-about-first_txt h1 a {
     color: blue;
 }
+
+/** About - first block of images **/
+.mk-wrapper-home .mk-main-container-home main .mk-about-page .mk-about-first_block_of_images {
+    padding-top: 8.33333vw;
+    padding-bottom: 8.33333vw;
+    position: relative;
+    display: flex;
+}
+
+.mk-wrapper-home .mk-main-container-home main .mk-about-page .mk-about-first_block_of_images .mk-first_image {
+    width: 41.66667vw;
+    height: 41.66667vw;
+    margin-left: 8.33333vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 50% 50%; */
+    background-image: url(img/photo-1.jpg);
+    z-index: 1;
+}
+
+.mk-wrapper-home .mk-main-container-home main .mk-about-page .mk-about-first_block_of_images .mk-second_image {
+    width: 33.33333vw;
+    height: 25vw;
+    margin-left: 8.33333vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 50% 50%; */
+    background-image: url(img/photo-2.jpg);
+    align-self: center;
+    /* display: inline-block;
+    vertical-align: middle;
+    position: relative; */
+    z-index: 1;
+}
+
+.mk-wrapper-home .mk-main-container-home main .mk-about-page .mk-about-first_block_of_images .mk-background_lemonade {
+    width: 58.33333vw;
+    height: 58.33333vw;
+    left: 41.66667vw;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    background-color: #FBFFA7;
+}
